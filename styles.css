@@ -1,0 +1,50 @@
+:root{
+--bg:#0f1722;
+--card:#0b1220;
+--muted:#9aa4b2;
+--accent:#2ea44f;
+--glass: rgba(255,255,255,0.04);
+--radius:12px;
+font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+margin:0;
+background:linear-gradient(180deg,#071022 0%, #07162a 100%);
+color:#e6eef6;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+}
+.container{max-width:1000px;margin:0 auto;padding:20px}
+.site-header{padding:28px 0;text-align:center}
+.site-header h1{margin:0;font-size:28px;letter-spacing:-0.5px}
+.tagline{color:var(--muted);margin-top:6px}
+.search-row{display:flex;gap:10px;justify-content:center;margin-top:14px}
+.search-row input{padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:var(--glass);color:inherit;min-width:260px}
+.search-row button{padding:10px 14px;border-radius:10px;border:none;background:var(--accent);color:#071022;font-weight:600;cursor:pointer}
+
+
+.profile-card{display:flex;gap:18px;align-items:center;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:16px;border-radius:var(--radius);margin-bottom:18px;border:1px solid rgba(255,255,255,0.03)}
+.profile-card img{width:84px;height:84px;border-radius:12px;object-fit:cover}
+.profile-meta h2{margin:0}
+.profile-meta p{margin:4px 0;color:var(--muted)}
+
+
+.repos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.repo{background:var(--card);padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);min-height:120px;display:flex;flex-direction:column;justify-content:space-between}
+.repo h3{margin:0 0 6px 0;font-size:16px}
+.repo p{margin:0;color:var(--muted);font-size:13px}
+.repo .meta{display:flex;gap:12px;margin-top:10px;font-size:13px;color:var(--muted)}
+.repo a{display:inline-block;margin-top:10px;text-decoration:none;color:var(--accent);font-weight:600}
+
+
+.status{margin-top:18px;color:var(--muted)}
+.hidden{display:none}
+.site-footer{padding:20px;text-align:center;color:var(--muted)}
+
+
+@media (max-width:520px){
+.search-row{flex-direction:column}
+.search-row input{width:100%}
+}

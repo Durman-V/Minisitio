@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Explorador GitHub — Mini Sitio</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<h1>Explorador de GitHub</h1>
+<p class="tagline">Busca un usuario y explora sus repositorios públicos</p>
+<div class="search-row">
+<input id="username" placeholder="Ingresa un usuario de GitHub (ej. octocat)" />
+<button id="searchBtn">Buscar</button>
+</div>
+</div>
+</header>
+
+
+<main class="container">
+<section id="profile" class="profile-card hidden">
+<!-- Perfil cargado por main.js -->
+</section>
+
+
+<section id="repos" class="repos-grid">
+<!-- Repos cargados por main.js -->
+</section>
+
+
+<div id="status" class="status"></div>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<small>Mini sitio — muestra datos públicos de GitHub. Hecho con ❤️ y la API pública de GitHub.</small>
+</div>
+</footer>
+
+
+<script src="main.js" type="module"></script>
+</body>
+</html>
