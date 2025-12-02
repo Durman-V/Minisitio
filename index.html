@@ -11,10 +11,19 @@
     <div class="container">
       <h1>Explorador de GitHub</h1>
       <p class="tagline">Busca un usuario de GitHub y explora sus datos públicos</p>
+
       <div class="search-row">
-        <input id="username" placeholder="Ingresa un usuario de GitHub (ej. octocat)" />
+        <input 
+          id="username" 
+          placeholder="Ejemplo: octocat" 
+          aria-label="Nombre de usuario de GitHub"
+        />
         <button id="searchBtn">Buscar</button>
       </div>
+
+      <!-- NUEVO: mensaje informativo -->
+      <p class="helper-text">Tip: Puedes buscar cualquier usuario público de GitHub</p>
+
     </div>
   </header>
 
@@ -27,12 +36,13 @@
       <!-- Repos cargados por main.js -->
     </section>
 
-    <div id="status" class="status"></div>
+    <!-- NUEVO: Loader visual simple -->
+    <div id="status" class="status loader hidden"></div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <small>Mini sitio — muestra datos públicos de GitHub. Hecho con ❤️ y la API pública de GitHub.</small>
+      <small>Mini sitio realizado como práctica de consumo de API, estilo y GitHub Flow.</small>
     </div>
   </footer>
 
